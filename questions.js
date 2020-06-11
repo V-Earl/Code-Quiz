@@ -12,8 +12,6 @@ $(document).ready(function () {
   });
 });
 
-/////////load first//////
-
 // constructor function for the scores
 function Quiz(questions) {
   this.score = 0;
@@ -39,9 +37,7 @@ Quiz.prototype.guess = function (answer) {
     this.score++;
   }
 };
-//////////////////////////////////////////////////
 
-// constructor function (Question is the class or constructor of the class)
 function Question(title, choices, answer) {
   this.title = title;
   this.choices = choices;
@@ -53,8 +49,6 @@ Question.prototype.correctAnswer = function (choice) {
   return choice === this.answer;
 };
 
-/////load last///////
-
 // function to show each question
 function showQuestion() {
   if (questionIndex > 3) {
@@ -63,10 +57,8 @@ function showQuestion() {
     $("#start-quiz").hide();
     $("#Correct").text("Correct Answers: " + correctAnswers);
     $("#Wrong").text("Wrong Answers: " + wrongAnswers);
-    $("#Time").text("Time to complete: " + diff);
+    $("#Time").text("Elapsed Time: " + diff + " " + "sec");
     $("#Finished").show();
-
-    // showScores();
   } else {
     // show questions
     var questionElement = $("#question-title");

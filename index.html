@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="start-button-container">
+      <button type="start-button" class="btn btn-primary btn-lg" id="start">
+        Start
+      </button>
+    </div>
+
+    <div class="container" id="start-quiz">
+      <div class="timer-row">
+        Timer
+        <p id="question-title"></p>
+        <div class="answer-buttons-container">
+          <button type="btn0" id="Answer0" class="btn btn-lg"></button>
+          <button type="btn1" id="Answer1" class="btn btn-lg"></button>
+          <button type="btn2" id="Answer2" class="btn btn-lg"></button>
+          <button type="btn3" id="Answer3" class="btn btn-lg"></button>
+        </div>
+      </div>
+      <!-- <div class="next-button-container">
+        <button type="button" class="btn btn-secondary btn-sm">Next</button>
+      </div> -->
+    </div>
+    <div id="Finished">
+      <h2 id="Correct"></h2>
+      <h2 d="Wrong"></h2>
+      <h1 id="Time"></h1>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="moment.js"></script>
+  </body>
+</html>

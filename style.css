@@ -1,0 +1,11 @@
+#start-quiz {
+  display: none;
+}
+
+#start {
+  display: block;
+}
+
+#Finished {
+  display: none;
+}
